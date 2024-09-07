@@ -2,6 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ecommerce/Feature/Home/cubit/home_states.dart';
 import 'package:ecommerce/Feature/Home/cubit/home_view_model.dart';
 import 'package:ecommerce/Feature/auth/login/login_screen.dart';
+import 'package:ecommerce/Feature/product/product_details.dart';
+import 'package:ecommerce/Feature/product/product_screen.dart';
 import 'package:ecommerce/core/widgets_and_functions/share_prefs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -100,17 +102,22 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                const Row(
+                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
                       "Categories",
                       style: TextStyle(color: Color(0xff004182), fontSize: 20),
                     ),
-                    Text(
-                      "view all",
-                      style: TextStyle(
-                        color: Color(0xff004182),
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, ProductScreen.routeScreen);
+                      },
+                      child: Text(
+                        "view all",
+                        style: TextStyle(
+                          color: Color(0xff004182),
+                        ),
                       ),
                     ),
                   ],

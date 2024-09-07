@@ -16,6 +16,7 @@ class ProductViewModel extends Cubit<ProductStates>{
   List<ProductDataEntity> product=[];
   String?errorMessage;
  Future<void> getProduct()async{
+
     emit(ProductLoading());
     var response =await productUseCase.invoke();
 

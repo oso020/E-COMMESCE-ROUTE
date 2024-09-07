@@ -2,6 +2,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ecommerce/Feature/product/cubit/product_states.dart';
 import 'package:ecommerce/Feature/product/cubit/view_model.dart';
+import 'package:ecommerce/Feature/product/product_details.dart';
 import 'package:ecommerce/Feature/product/product_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -66,7 +67,9 @@ class ProductScreen extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return InkWell(
                         onTap: (){
-
+Navigator.pushNamed(context, ProductDetails.routeName,
+arguments: state.product[index]
+);
                         },
                         child: ProductItem(
                           productDataEntity: state.product[index],

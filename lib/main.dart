@@ -8,6 +8,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'Feature/auth/login/login_screen.dart';
 import 'Feature/auth/register/register_screen.dart';
+import 'Feature/product/product_details.dart';
 import 'core/widgets_and_functions/share_prefs.dart';
 import 'di/di.dart';
 
@@ -44,12 +45,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: ProductScreen.routeScreen,
+      initialRoute: route,
       routes: {
         RegisterScreen.routeName:(context)=>RegisterScreen(),
         LoginScreen.routeName:(context)=>LoginScreen(),
         HomeScreen.routeName:(context)=>HomeScreen(),
         ProductScreen.routeScreen:(context)=>ProductScreen(),
+        ProductDetails.routeName:(context)=>ProductDetails(),
       },
 
 
