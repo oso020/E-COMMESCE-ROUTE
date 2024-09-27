@@ -1,0 +1,45 @@
+import 'package:dio/dio.dart';
+
+class TestService {
+  final Dio _dio;
+
+  TestService._()
+      : _dio = Dio(
+          BaseOptions(
+            receiveDataWhenStatusError: true,
+            connectTimeout: const Duration(seconds: 20),
+            receiveTimeout: const Duration(seconds: 20),
+            headers: {'Content-Type': 'application/json'},
+            responseType: ResponseType.json,
+            validateStatus: (status) => true,
+          ),
+        );
+         // singleton
+  static TestService? _instance;
+  static TestService get instance => instance ?? TestService.();
+
+  Future<dynamic> register(String name, String email, String password,
+      String rePassword, String phone) async {
+    try {
+      // internet
+      var response = await _dio
+          .post("https://ecommerce.routemisr.com/api/v1/auth/signup", data: {
+        "name": "ahmed",
+        "email": "ahmednini@donia.com",
+        "password": "Ahmed@123",
+        "rePassword": "Ahmed@123",
+        "phone": "0100100100"
+      });
+
+      if (response.statusCode! >= 200 && response.statusCode! < 300) {
+        /// success
+        print("success ${response.data}");
+      } else {
+        print("failure ${response.data}");
+      }
+    } catch (e) {
+      print("error ${e.toString()}");
+      return e.toString;
+    }
+  }
+}
