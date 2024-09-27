@@ -43,7 +43,6 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: RouteGenerator.getRoute,
       initialRoute: route,
 
-      // home: const Home(),
     );
   }
 }
