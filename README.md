@@ -89,29 +89,16 @@ Run the app:
   <img src="https://github.com/oso020/E-COMMESCE-ROUTE/blob/master/screen%20shots/products%20detailes.png" alt="Task Delete" width="220" style="margin: 10px;"/>
 
 
-
-  
-
 </p>
+
 <p align="center">
        <img src="https://github.com/oso020/E-COMMESCE-ROUTE/blob/master/screen%20shots/cart.png" alt="Edit Task" width="220" style="margin: 10px;"/></p>
   <img src="https://github.com/oso020/E-COMMESCE-ROUTE/blob/master/screen%20shots/favorite%20page.png" alt="Done Task" width="220" style="margin: 10px;"/>
     <img src="https://github.com/oso020/E-COMMESCE-ROUTE/blob/master/screen%20shots/profile%20page.png" alt="Dialog Dark" width="220" style="margin: 10px;"/>
-<p align="center">
-     <img src="https://github.com/oso020/TO-DO-APP/blob/development/sceenshots/settings.png" alt="Settings" width="220" style="margin: 10px;"/>
 </p>
 
 
-
-
-
-
-
-
-
-
-
-
+=
 # License
 - This project is licensed under the MIT License - see the LICENSE file for details.
 
