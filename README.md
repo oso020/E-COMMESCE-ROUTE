@@ -88,11 +88,10 @@ Run the app:
   <img src="https://github.com/oso020/E-COMMESCE-ROUTE/blob/master/screen%20shots/products.png" alt="Task Add" width="220" style="margin: 10px;"/>
   <img src="https://github.com/oso020/E-COMMESCE-ROUTE/blob/master/screen%20shots/products%20detailes.png" alt="Task Delete" width="220" style="margin: 10px;"/>
 
-
 </p>
 
 <p align="center">
-       <img src="https://github.com/oso020/E-COMMESCE-ROUTE/blob/master/screen%20shots/cart.png" alt="Edit Task" width="220" style="margin: 10px;"/></p>
+       <img src="https://github.com/oso020/E-COMMESCE-ROUTE/blob/master/screen%20shots/cart.png" alt="Edit Task" width="220" style="margin: 10px;"/>
   <img src="https://github.com/oso020/E-COMMESCE-ROUTE/blob/master/screen%20shots/favorite%20page.png" alt="Done Task" width="220" style="margin: 10px;"/>
     <img src="https://github.com/oso020/E-COMMESCE-ROUTE/blob/master/screen%20shots/profile%20page.png" alt="Dialog Dark" width="220" style="margin: 10px;"/>
 </p>
