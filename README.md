@@ -1,4 +1,4 @@
-#-E-Commerce App
+# E-Commerce App
 # Overview
 - A Flutter-based E-Commerce app offering a complete shopping experience with features like user authentication, product browsing, cart management, and favorites. The app follows the MVVM pattern, uses BLoC and Cubit for state management, and integrates clean - 
 -  architecture for scalability and maintainability.
